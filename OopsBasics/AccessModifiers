@@ -1,0 +1,20 @@
+public class AcessModifiers {
+    public static void main(String[] args) {
+        Account myacc = new Account();
+        myacc.username = "hemanthrajesh1405@gmail.com";
+        myacc.setpassword("Ksaraswathi3");
+        System.out.println(myacc.username);
+        // myacc.password cannot be accessed beacuse it is an private thing but it can
+        // be changed
+    }
+}
+
+class Account {
+    public String username;
+    private String password;
+
+    void setpassword(String pswd) {
+        password = pswd;
+    }
+
+}
